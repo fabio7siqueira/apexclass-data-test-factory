@@ -1,0 +1,9 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <article class="slds-card">
+        <lightning-card title="Apex Class Data Factory">
+            <lightning-input type="text" label="SObject ID" name="sobjectId" onchange={handleChange} placeholder="Copy and past here the ID..."></lightning-input>
+            <lightning-textarea read-only label="Copy the method and past into your apex test class" name="factoryMethod" value={factoryMethod}></lightning-textarea>
+        </lightning-card>
+    </article>
+</template>

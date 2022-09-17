@@ -1,0 +1,3 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId">
+    <c:sobjectFactoryTest recordId="{!v.recordId}"></c:sobjectFactoryTest>
+</aura:component>
