@@ -1,0 +1,21 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-quick-action-panel>
+        <div>
+            <div class="slds-card slds-p-around_small box-shadow">
+                <div class="slds-p-bottom_medium">
+                    <h1><b>SObject ID</b> {recordId}</h1>
+                </div>
+                <div>
+                    <lightning-button variant="brand-outline" label="Click here to generate mock" title="clickHere" onclick={handleClick}></lightning-button>
+                </div>
+            </div>
+            <div class="slds-card">
+                <lightning-textarea label="Copy the method and past into your apex test class" data-name="factoryMethod" value={factoryMethod} read-only></lightning-textarea>
+            </div>
+        </div>
+    </lightning-quick-action-panel>
+    <template if:true={loading}>
+        <lightning-spinner alternative-text="Loading..." size="medium"></lightning-spinner>
+    </template>
+</template>
