@@ -1,3 +1,17 @@
+&nbsp;&nbsp;&nbsp;&nbsp;Olá, pessoas, sejam bem vindos ao meu projeto ***Salesforce***.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Este projeto é bem simples, na verdade. Minha intenção é começar a utilizar o ***Git Hub*** que eu estudei pelo [Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA) ministrado pelo mestre [Gustavo Guanabara](https://github.com/gustavoguanabara).
+
+&nbsp;&nbsp;&nbsp;&nbsp;Também comecei a estudar **LWC** (***Lightning Web Component***) e aqui, neste projeto, utilizo um componente bem básico como treinamento prático. Mas, o meu objetivo principal é facilitar minha vida para gerar dados para classes de teste.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Então, resolvi unir tudo neste projeto/repositório, onde eu construí um **LWC**, para gerar dados e converter em um método apex, pronto para ser utilizado (ou quase :grimacing:, já que será preciso inserir os Ids de relacionamento posteriormente direto na classe) e ainda praticar o uso desta ferramenta incrível :heart:.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Quero colaborar com a comunidade deixando este projeto público, e quem sabe alguém possa melhorá-lo.
+
+### Abraço!
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
