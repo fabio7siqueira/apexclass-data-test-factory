@@ -20,11 +20,11 @@ public without sharing class SobjectFactoryTest {
             methodText = 'public static ' + objType + ' create' + objType + recordTypeDeveloperName + '() {\n';
             methodText += '\treturn new ' + objType + '(\n';
             for (String key: mapFields.keySet()) {
-                // VERIFY FIELDS READ ONLY
                 String fieldType = String.valueOf(mapFields.get(key).getDescribe().getType());
                 Object fieldData = obj.get(key);
+                Boolean isUpdateableField = mapFields.get(key).getDescribe().isUpdateable();
 
-                if (fieldData == null || fieldType == 'REFERENCE' || fieldsToScape().contains(key) || String.valueOf(fieldData).containsIgnoreCase('System.Address')) {
+                if (fieldData == null || fieldType == 'REFERENCE' || !isUpdateableField) {
                     continue;
                 }
 
@@ -37,13 +37,6 @@ public without sharing class SobjectFactoryTest {
         } catch (Exception e) {
             throw new AuraHandledException(e.getMessage());
         }
-    }
-
-    private static Set<String> fieldsToScape() {
-        return new Set<String>{
-            'id', 'createdbyid', 'createddate', 'createdbyid', 'lastmodifieddate', 'lastmodifiedbyid', 'systemmodstamp', 
-            'lastactivitydate', 'lastvieweddate', 'lastreferenceddate', 'ownerid', 'lasttransferdate'
-        };
     }
 
     private static String getRecordTypeDeveloperName(String recordTypeId, String sObjectApiName) {
