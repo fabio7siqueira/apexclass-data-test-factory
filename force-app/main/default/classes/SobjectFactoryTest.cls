@@ -11,7 +11,7 @@ public without sharing class SobjectFactoryTest {
             String recordTypeDeveloperName = '';
             Map<String, SObjectField> mapFields = new Map<String, SObjectField>();
 
-            SObject obj = DynamicDAO.findSoject(objType, whereId, recordId, null);
+            SObject obj = DynamicDAO.findSObject(objType, whereId, recordId, null);
             
             mapFields = Schema.getGlobalDescribe().get(objType).getDescribe().fields.getMap();
             recordTypeId = mapFields.containsKey('recordtypeid') ? String.valueOf(obj.get('recordtypeid')) : '';
