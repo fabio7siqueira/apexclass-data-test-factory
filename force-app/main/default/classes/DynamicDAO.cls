@@ -1,6 +1,6 @@
 public with sharing class DynamicDAO {
 
-    public static SObject findSoject(String objectName, String whereId, String recordId, String orderBy) {
+    public static SObject findSObject(String objectName, String whereId, String recordId, String orderBy) {
         if (orderBy == null) {
             orderBy = '';
         }
